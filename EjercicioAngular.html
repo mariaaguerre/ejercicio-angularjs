@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio AngularJS</title>
+	<link rel="Stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+	<h1> Ejercicio AngularJS </h1>
+<hr/>
+	<br/>
+	<div class="caja">
+	<div ng-app="app" ng-controller="StyleController">
+		<select ng-model="Color">
+			<option>Red</option>
+			<option>Blue</option>
+			<option>Green</option>
+			<option>Purple</option>
+
+		</select>
+		<button ng-click="SetStyle()" class='boton'>Aplicar</button>
+		
+		<br/>
+		<br/>
+
+		<span ng-style="CustomStyle" class='palabra'>Cambia el color de este texto!</span>
+	</div></div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p class="autor">Por Maria Almeida </p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js" type="text/javascript"></script>
+<script src="Ejercicio.js" type="text/javascript"></script>
+
+</body>
+</html>
+
